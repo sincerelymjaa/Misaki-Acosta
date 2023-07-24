@@ -66,7 +66,7 @@ class DigiCam:
     def insert_memorycard(self):
         self.memorycard = self.memorycard + 256
         
-camera = DigiCam(360, 9, "you saw the white sandy beach through the viewfinder", "the shutter was pressed", 0)
+camera = DigiCam(360, 9, "You saw the white sandy beach through the viewfinder", "The shutter was pressed", 0)
 print ("Before change lens:", camera.lens)
 camera.change_lens()
 print ("After change lens:", camera.lens)
@@ -82,4 +82,82 @@ print ("After insert memory card:", camera.memorycard)
 """
 After running the code above, it will display the change in numerical value of the lens millimeter (which affects the focal length of the camera), flash value, and memory card storage value. It also describes what a person can see through their camera's viewfinder and if the camera's shutter was pressed.
 I tried simulating the way a person uses a camera through code.
+"""
+
+# This is the code for Class 7: Guitar
+class Guitar:
+# Attributes of Guitar Class
+    def __init__(self, st, fb, t, b, n):
+        self.strings = st
+        self.fretboard = fb
+        self.type = t 
+        self.body = b
+        self.neck = n
+# Methods for Guitar Class
+    def tune_strings(self):
+        self.strings = self.strings + 1
+    
+    def strum_chord(self):
+        self.fretboard = self.fretboard
+    
+    def determine_type(self):
+        self.type = self.type
+        
+    def knock_on_body(self):
+        self.body = self.body
+        
+    def hold_neck(self):
+        self.neck = self.neck
+
+guitarnitaerae = Guitar(0, "You strummed the G Chord", "Yamada Acoustic Guitar", "You knocked on your guitar's body", "You are holding your guitar by its neck")
+print ("Before tune strings:", guitarnitaerae.strings)
+guitarnitaerae.tune_strings()
+print ("After tune strings:", guitarnitaerae.strings)
+print(guitarnitaerae.fretboard)
+print(guitarnitaerae.type)
+print(guitarnitaerae.body)
+print(guitarnitaerae.neck)
+
+"""
+After running the code above, it will display the increase in numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
+The code also describes the different actions a person does with their guitar. It also notes the guitar type. I had to modify one of the methods so that all of the attributes have a corresponding method.
+"""
+
+# This is the code for Class 8: Computer Mouse
+class CompMouse:
+# Attributes of Computer Mouse Class
+    def __init__(self, c, w, wh, bt, tp):
+        self.color = c
+        self.weight = w
+        self.wheel = wh 
+        self.button = bt
+        self.type = tp
+# Methods for Computer Mouse Class
+    def see_color(self):
+        self.color = self.color 
+    
+    def discover_weight(self):
+        self.weight = self.weight + 4.23
+
+    def scroll_up(self):
+        self.wheel = self.wheel
+    
+    def click_left_button(self):
+        self.button = self.button
+        
+    def determine_type(self):
+        self.type = self.type
+        
+desktopmouse = CompMouse("black", 0, "You scrolled up", "You left-clicked", "wireless mouse")
+print(desktopmouse.color)
+print ("Before discover weight:", desktopmouse.weight)
+desktopmouse.discover_weight()
+print ("After discover weight:", desktopmouse.weight)
+print(desktopmouse.wheel)
+print(desktopmouse.button)
+print(desktopmouse.type)
+
+""" 
+After running the code above, it will display the color, weight, type of the Computer Mouse. The code also describes the actions taken by the person if they use the mouse wheel to scroll and click its button.
+I had to modify one of the methods so that all of the attributes have a corresponding method.
 """
