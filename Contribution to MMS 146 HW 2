@@ -8,6 +8,7 @@ class KPopAlbum:
         self.photocard = pc 
         self.photobook = pb 
         self.cd = c 
+
 # Methods for K-Pop Album Class
     def identify_variation(self):
         self.version = self.version
@@ -23,6 +24,7 @@ class KPopAlbum:
         
     def play_cd(self):
         self.cd = self.cd 
+
 # Created Different K-Pop Album Variations
 albumone = KPopAlbum("artbook","flat displaying a group photo", "Andy Park", "Page 3", "Track 11")
 albumtwo = KPopAlbum("vending machine", "flat displaying a photo of Donghyuck and Injun", "Taeraesa Kim", "Page 23", "Track 1")
@@ -36,7 +38,7 @@ print (albumfour.photobook)
 print (albumfive.cd)
 
 """
-After running the code above, it will display the album version, poster image, photocard version (which displays the name of the K-Pop Idol), photobook page, and track played on the album CD.
+After running the code above, it will display the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
 I made five album variations to show the randomness of the inclusions that come with every K-Pop Album.
 I am only describing the inclusions; hence, there is no numerical change or increase in value.
 """
@@ -50,6 +52,7 @@ class DigiCam:
         self.viewfinder = vf 
         self.shutter = s
         self.memorycard = mc 
+
 # Methods for Digital Camera Class
     def change_lens(self):
         self.lens = self.lens + 10
@@ -65,7 +68,8 @@ class DigiCam:
         
     def insert_memorycard(self):
         self.memorycard = self.memorycard + 256
-        
+
+# Created a Camera Object
 camera = DigiCam(360, 9, "You saw the white sandy beach through the viewfinder", "The shutter was pressed", 0)
 print ("Before change lens:", camera.lens)
 camera.change_lens()
@@ -80,7 +84,7 @@ camera.insert_memorycard()
 print ("After insert memory card:", camera.memorycard)
 
 """
-After running the code above, it will display the change in numerical value of the lens millimeter (which affects the focal length of the camera), flash value, and memory card storage value. It also describes what a person can see through their camera's viewfinder and if the camera's shutter was pressed.
+After running the code above, it will display the change in the numerical value of the lens millimeter (which affects the focal length of the camera), flash value, and memory card storage value. It also describes what a person can see through their viewfinder and if the camera's shutter is pressed.
 I tried simulating the way a person uses a camera through code.
 """
 
@@ -93,6 +97,7 @@ class Guitar:
         self.type = t 
         self.body = b
         self.neck = n
+
 # Methods for Guitar Class
     def tune_strings(self):
         self.strings = self.strings + 1
@@ -109,6 +114,7 @@ class Guitar:
     def hold_neck(self):
         self.neck = self.neck
 
+# Created a Guitar Object
 guitarnitaerae = Guitar(0, "You strummed the G Chord", "Yamada Acoustic Guitar", "You knocked on your guitar's body", "You are holding your guitar by its neck")
 print ("Before tune strings:", guitarnitaerae.strings)
 guitarnitaerae.tune_strings()
@@ -119,7 +125,7 @@ print(guitarnitaerae.body)
 print(guitarnitaerae.neck)
 
 """
-After running the code above, it will display the increase in numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
+After running the code above, it will display the increase in the numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
 The code also describes the different actions a person does with their guitar. It also notes the guitar type. I had to modify one of the methods so that all of the attributes have a corresponding method.
 """
 
@@ -132,6 +138,7 @@ class CompMouse:
         self.wheel = wh 
         self.button = bt
         self.type = tp
+
 # Methods for Computer Mouse Class
     def see_color(self):
         self.color = self.color 
@@ -147,7 +154,8 @@ class CompMouse:
         
     def determine_type(self):
         self.type = self.type
-        
+
+# Created a Mouse Object
 desktopmouse = CompMouse("black", 0, "You scrolled up", "You left-clicked", "wireless mouse")
 print(desktopmouse.color)
 print ("Before discover weight:", desktopmouse.weight)
@@ -158,6 +166,6 @@ print(desktopmouse.button)
 print(desktopmouse.type)
 
 """ 
-After running the code above, it will display the color, weight, type of the Computer Mouse. The code also describes the actions taken by the person if they use the mouse wheel to scroll and click its button.
+After running the code above, it will display the color, weight, and type of the Computer Mouse. The code also describes the actions taken by the person if they use the mouse wheel to scroll and click its button.
 I had to modify one of the methods so that all of the attributes have a corresponding method.
 """
