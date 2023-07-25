@@ -232,7 +232,8 @@ print (albumfour.photobook)
 print (albumfive.cd)
 
 """
-After running the code above, it will display the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
+After running the code above, it will display the album version, poster image, photocard version 
+(which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
 I made five album variations to show the randomness of the inclusions that come with every K-Pop Album.
 I am only describing the inclusions; hence, there is no numerical change or increase in value.
 """
@@ -278,7 +279,9 @@ camera.insert_memorycard()
 print ("After insert memory card:", camera.memorycard)
 
 """
-After running the code above, it will display the change in the numerical value of the lens millimeter (which affects the focal length of the camera), flash value, and memory card storage value. It also describes what a person can see through their viewfinder and if the camera's shutter is pressed.
+After running the code above, it will display the change in the numerical value of the lens millimeter 
+(which affects the focal length of the camera), flash value, and memory card storage value. 
+It also describes what a person can see through their viewfinder and if the camera's shutter is pressed.
 I tried simulating the way a person uses a camera through code.
 """
 
@@ -319,8 +322,10 @@ print(guitarnitaerae.body)
 print(guitarnitaerae.neck)
 
 """
-After running the code above, it will display the increase in the numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
-The code also describes the different actions a person does with their guitar. It also notes the guitar type. I had to modify one of the methods so that all of the attributes have a corresponding method.
+After running the code above, it will display the increase in the numerical value of the tuned chord. 
+This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
+The code also describes the different actions a person does with their guitar. It also notes the guitar type. 
+I had to modify one of the methods so that all of the attributes have a corresponding method.
 """
 
 # This is the code for Class 8: Computer Mouse
@@ -360,6 +365,7 @@ print(desktopmouse.button)
 print(desktopmouse.type)
 
 """ 
-After running the code above, it will display the color, weight, and type of the Computer Mouse. The code also describes the actions taken by the person if they use the mouse wheel to scroll and click its button.
+After running the code above, it will display the color, weight, and type of the Computer Mouse. 
+The code also describes the actions taken by the person if they use the mouse wheel to scroll and click its button.
 I had to modify one of the methods so that all of the attributes have a corresponding method.
 """
