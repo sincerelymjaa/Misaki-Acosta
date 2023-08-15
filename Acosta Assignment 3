@@ -37,6 +37,48 @@ print (albumthree.photocard)
 print (albumfour.photobook)
 print (albumfive.cd)
 
+
+# This is the code for Class 7: Guitar (Second Class; Add Inheritance and Encapsulation)
+class Guitar:
+# Attributes of Guitar Class
+    def __init__(self, st, fb, t, b, n):
+        self.strings = st
+        self.fretboard = fb
+        self.type = t 
+        self.body = b
+        self.neck = n
+
+# Methods for Guitar Class
+    def tune_strings(self):
+        self.strings = self.strings + 1
+    
+    def strum_chord(self):
+        self.fretboard = self.fretboard
+    
+    def determine_type(self):
+        self.type = self.type
+        
+    def knock_on_body(self):
+        self.body = self.body
+        
+    def hold_neck(self):
+        self.neck = self.neck
+
+# Created a Guitar Object
+guitarnitaerae = Guitar(0, "You strummed the G Chord", "Yamada Acoustic Guitar", "You knocked on your guitar's body", "You are holding your guitar by its neck")
+print ("Before tune strings:", guitarnitaerae.strings)
+guitarnitaerae.tune_strings()
+print ("After tune strings:", guitarnitaerae.strings)
+print(guitarnitaerae.fretboard)
+print(guitarnitaerae.type)
+print(guitarnitaerae.body)
+print(guitarnitaerae.neck)
+
+"""
+After running the code above, it will display the increase in the numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
+The code also describes the different actions a person does with their guitar. It also notes the guitar type. I had to modify one of the methods so that all of the attributes have a corresponding method.
+"""
+
 """
 After running the code above, it will display the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
 I made five album variations to show the randomness of the inclusions that come with every K-Pop Album.
