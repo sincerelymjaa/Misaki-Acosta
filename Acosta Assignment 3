@@ -1,1 +1,44 @@
+# The succeeding lines are Misaki Acosta's contribution to this assignment.
+# This is the code for Class 5: K-Pop Album (First Class; Add Inheritance and Encapsulation)
+class KPopAlbum:
+# Attributes of K-Pop Album Class
+    def __init__(self, v, p, pc, pb, c):
+        self.version = v
+        self.poster = p
+        self.photocard = pc 
+        self.photobook = pb 
+        self.cd = c 
 
+# Methods for K-Pop Album Class
+    def identify_variation(self):
+        self.version = self.version
+    
+    def unroll_poster(self):
+        self.poster = self.poster
+    
+    def draw_random_photocard(self):
+        self.photocard = self.photocard
+        
+    def browse_photobook(self):
+        self.photobook = self.photobook
+        
+    def play_cd(self):
+        self.cd = self.cd 
+
+# Created Different K-Pop Album Variations
+albumone = KPopAlbum("artbook","flat displaying a group photo", "Andy Park", "Page 3", "Track 11")
+albumtwo = KPopAlbum("vending machine", "flat displaying a photo of Donghyuck and Injun", "Taeraesa Kim", "Page 23", "Track 1")
+albumthree = KPopAlbum("limited", "flat displaying a photo of Haobin", "Sky Kim", "Page 14", "Track 5")
+albumfour = KPopAlbum("digipack", "flat displaying a photo of Jiwoon", "Seok Woohyun", "Page 28", "Track 10")
+albumfive = KPopAlbum("jewel case", "flat displaying a photo of Shun, Kyo, and Ken", "Hannah Bhang", "Page 8", "Track 8")
+print (albumone.version)
+print (albumtwo.poster)
+print (albumthree.photocard)
+print (albumfour.photobook)
+print (albumfive.cd)
+
+"""
+After running the code above, it will display the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
+I made five album variations to show the randomness of the inclusions that come with every K-Pop Album.
+I am only describing the inclusions; hence, there is no numerical change or increase in value.
+"""
