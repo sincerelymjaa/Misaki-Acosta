@@ -1,7 +1,7 @@
-# The succeeding lines are Misaki Acosta's contribution to this assignment.
-# This is the code for Class 5: K-Pop Album (First Class; Add Inheritance and Encapsulation)
+# The succeeding lines are Misaki Acosta's contribution to this Assignment
+#This is the code for the K-Pop Album Class (Parent Class)
 class KPopAlbum:
-# Attributes of K-Pop Album Class
+# Attributes of the K-Pop Album Class
     def __init__(self, v, p, pc, pb, c):
         self.version = v
         self.poster = p
@@ -25,7 +25,38 @@ class KPopAlbum:
     def play_cd(self):
         self.cd = self.cd 
 
-# Created Different K-Pop Album Variations
+# This is the code for the Pre-Order Benefits (POB) Class (Child Class)
+class POB(KPopAlbum):
+# Attributes of the POB Class
+    def __init__(self, e, b, f, s, v, p, pc, pb, c):
+        super().__init__(v, p, pc, pb, c)
+        self.exclusive_photocard = e
+        self.__videocall_benefit = b
+        self.folder = f
+        self.sticker = s
+        
+# Methods for the POB Class
+    def pull_random_exclusive_photocard(self):
+        print ("Exclusive Photocard: ", self.exclusive_photocard)
+    def get_random_a4_folder(self):
+        print ("A4 Folder: ", self.folder)
+    def obtain_random_sticker_set(self):
+        print ("Sticker: ", self.sticker)
+    
+# Getter and Setter methods for the private variable videocall_benefit
+    def set_videocall_benefit(self, b):
+        self.__videocall_benefit = b
+        
+    def get_videocall_benefit(self):
+        print(self.__videocall_benefit)
+
+"""
+The attribute videocall_benefit is private since, in a real-life context, 
+the information on who the winners are in the raffled video call benefit is not publicly disclosed. 
+Only the winners of the video call benefit know if they won the prize. 
+"""  
+# Main Program
+# Created Different Regular K-Pop Album Variations
 albumone = KPopAlbum("artbook","flat displaying a group photo", "Andy Park", "Page 3", "Track 11")
 albumtwo = KPopAlbum("vending machine", "flat displaying a photo of Donghyuck and Injun", "Taeraesa Kim", "Page 23", "Track 1")
 albumthree = KPopAlbum("limited", "flat displaying a photo of Haobin", "Sky Kim", "Page 14", "Track 5")
@@ -37,50 +68,36 @@ print (albumthree.photocard)
 print (albumfour.photobook)
 print (albumfive.cd)
 
-
-# This is the code for Class 7: Guitar (Second Class; Add Inheritance and Encapsulation)
-class Guitar:
-# Attributes of Guitar Class
-    def __init__(self, st, fb, t, b, n):
-        self.strings = st
-        self.fretboard = fb
-        self.type = t 
-        self.body = b
-        self.neck = n
-
-# Methods for Guitar Class
-    def tune_strings(self):
-        self.strings = self.strings + 1
-    
-    def strum_chord(self):
-        self.fretboard = self.fretboard
-    
-    def determine_type(self):
-        self.type = self.type
-        
-    def knock_on_body(self):
-        self.body = self.body
-        
-    def hold_neck(self):
-        self.neck = self.neck
-
-# Created a Guitar Object
-guitarnitaerae = Guitar(0, "You strummed the G Chord", "Yamada Acoustic Guitar", "You knocked on your guitar's body", "You are holding your guitar by its neck")
-print ("Before tune strings:", guitarnitaerae.strings)
-guitarnitaerae.tune_strings()
-print ("After tune strings:", guitarnitaerae.strings)
-print(guitarnitaerae.fretboard)
-print(guitarnitaerae.type)
-print(guitarnitaerae.body)
-print(guitarnitaerae.neck)
-
-"""
-After running the code above, it will display the increase in the numerical value of the tuned chord. This change simulates the increase in the chord's pitch once you twist the tuning peg for that chord.
-The code also describes the different actions a person does with their guitar. It also notes the guitar type. I had to modify one of the methods so that all of the attributes have a corresponding method.
-"""
-
 """
 After running the code above, it will display the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
 I made five album variations to show the randomness of the inclusions that come with every K-Pop Album.
 I am only describing the inclusions; hence, there is no numerical change or increase in value.
+"""
+
+# Created a Special/Limited Edition K-Pop Album
+specialalbum = POB("Charisma Hao (Cat Ver.)", "Insert Winner's Name Here", "Dear Dream A4 Clear Folder", "S-Class Sticker Set", "mixtape", "flat displaying a group yearbook layout", "Shen Quan Rui","Page 27", "Track 3")
+
+print (specialalbum.exclusive_photocard)
+print (specialalbum.folder)
+print (specialalbum.sticker)
+print (specialalbum.version)
+print (specialalbum.poster)
+print (specialalbum.photocard)
+print (specialalbum.photobook)
+print (specialalbum.cd)
+
+# Code to make the private attribute videocall_benefit publicly visible 
+specialalbum.get_videocall_benefit()
+specialalbum.set_videocall_benefit("Akiara Acosta-Kim")
+specialalbum.get_videocall_benefit()
+
+"""
+Unlike the other Regular K-Pop Albums above, the Special Album has Pre-Order Benefits (POB). 
+These Pre-Order benefits are rare. 
+Only those fans who ordered the album early or its limited version can have these. 
+The common POB are exclusive photocards and the video call benefit. 
+As for the folder and sticker, it is usually a "limited edition" benefit for the K-Pop Album's Japan release. 
+Fans can only get these benefits if they purchase the album from a specific shop (like Makestar, Withmuu, etc.) or a CD store in Japan. 
+However, the POB from one store differs from another store. 
+No POBs are the same from various stores.
 """
