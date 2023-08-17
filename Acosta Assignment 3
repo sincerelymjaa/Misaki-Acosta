@@ -74,7 +74,7 @@ I made five album variations to show the randomness of the inclusions that come 
 I am only describing the inclusions; hence, there is no numerical change or increase in value.
 """
 
-# Created a Special/Limited Edition K-Pop Album
+# Created a Special/Limited Edition K-Pop Album which includes the POB
 specialalbum = POB("Charisma Hao (Cat Ver.)", "Insert Winner's Name Here", "Dear Dream A4 Clear Folder", "S-Class Sticker Set", "mixtape", "flat displaying a group yearbook layout", "Shen Quan Rui","Page 27", "Track 3")
 
 print (specialalbum.exclusive_photocard)
