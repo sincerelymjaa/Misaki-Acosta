@@ -92,12 +92,11 @@ specialalbum.set_videocall_benefit("Akiara Acosta-Kim")
 specialalbum.get_videocall_benefit()
 
 """
-Unlike the other Regular K-Pop Albums above, the Special Album has Pre-Order Benefits (POB). 
-These Pre-Order benefits are rare. 
-Only those fans who ordered the album early or its limited version can have these. 
-The common POB are exclusive photocards and the video call benefit. 
-As for the folder and sticker, it is usually a "limited edition" benefit for the K-Pop Album's Japan release. 
+Regular Albums and Special Albums share attributes such as the album version, poster image, photocard version (which shows the name of the K-Pop Idol), photobook page, and track played on the album CD.
+However, unlike the other Regular K-Pop Albums above, the Special Album has Pre-Order Benefits (POB). These Pre-Order benefits are rare; only those fans who ordered the album early or its limited version can have them.
+The most common POBs are exclusive photocards and the video call benefit. The exclusive photocards contain a rare selfie taken by the K-Pop Idol. As for the video call benefit, fans who win this can interact with their K-Pop idol through a video call. 
+As for the folder and sticker, it is usually a "limited edition" benefit for the K-Pop Album's Japan release.
 Fans can only get these benefits if they purchase the album from a specific shop (like Makestar, Withmuu, etc.) or a CD store in Japan. 
-However, the POB from one store differs from another store. 
+However, the POB from one store differs from that from another store.
 No POBs are the same from various stores.
 """
