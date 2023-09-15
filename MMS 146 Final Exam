@@ -42,48 +42,6 @@ class KPopAlbum:
     def play_cd(self):
         self.cd = self.cd 
 
-# This is an example of Inheritance in OOP
-#This is the code for the K-Pop Album Class (Parent Class)
-class KPopAlbum:
-# Attributes of the K-Pop Album Class
-    def __init__(self, v, p, pc, pb, c):
-        self.version = v
-        self.poster = p
-        self.photocard = pc 
-        self.photobook = pb 
-        self.cd = c 
 
-# Methods for K-Pop Album Class
-    def identify_variation(self):
-        self.version = self.version
-    
-    def unroll_poster(self):
-        self.poster = self.poster
-    
-    def draw_random_photocard(self):
-        self.photocard = self.photocard
-        
-    def browse_photobook(self):
-        self.photobook = self.photobook
-        
-    def play_cd(self):
-        self.cd = self.cd 
-
-# This is the code for the Pre-Order Benefits (POB) Class (Child Class)
-class POB(KPopAlbum):
-# Attributes of the POB Class
-    def __init__(self, e, f, s, v, p, pc, pb, c):
-        super().__init__(v, p, pc, pb, c)
-        self.exclusive_photocard = e
-        self.folder = f
-        self.sticker = s
-        
-# Methods for the POB Class
-    def pull_random_exclusive_photocard(self):
-        print ("Exclusive Photocard: ", self.exclusive_photocard)
-    def get_random_a4_folder(self):
-        print ("A4 Folder: ", self.folder)
-    def obtain_random_sticker_set(self):
-        print ("Sticker: ", self.sticker)
     
 # This is an example of Polymorphism in OOP
