@@ -1,1 +1,24 @@
+# This is Polymorphism in OOP
+class Album:
+        def print_version (self):
+            print ("CD Album Version")
+# Album is the parent class
 
+class KPopAlbum:
+      def print_version (self):
+            print ("Photobook Album Version")
+
+class JPopAlbum:
+      def print_version (self):
+            print ("CD Album Version")
+
+class DisplayAlbum:
+      def view_album (self):
+                print ("This is the Display Album") 
+
+al1 = KPopAlbum()
+al2 = JPopAlbum()
+al3 = DisplayAlbum()
+
+al1.print_version()
+al2.print_version()
