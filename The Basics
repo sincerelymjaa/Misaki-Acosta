@@ -41,7 +41,3 @@ class KPopAlbum:
         
     def play_cd(self):
         self.cd = self.cd 
-
-
-    
-# This is an example of Polymorphism in OOP
