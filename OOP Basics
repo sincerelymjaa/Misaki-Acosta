@@ -1,6 +1,12 @@
 
 # This is an example of an Object in OOP
-  K Pop Album
+K Pop Album
+newalbum = KPopAlbum("artbook"," flat displaying a group photo", "Andy Park", "Page 3", "Track 6")
+print (newalbum.version)
+print (newalbum.poster)
+print (newalbum.photocard)
+print (newalbum.photobook)
+print (newalbum.cd)
 
 # These are examples of Attributes in OOP
   KPop Album.version
