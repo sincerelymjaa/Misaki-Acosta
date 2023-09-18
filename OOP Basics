@@ -9,11 +9,11 @@ print (newalbum.photobook)
 print (newalbum.cd)
 
 # These are examples of Attributes in OOP
-  KPop Album.version
-  KPop Album.poster
-  KPop Album.photocard 
-  KPop Album.photobook 
-  KPop Album.cd
+KPop Album.version
+KPop Album.poster
+KPop Album.photocard 
+KPop Album.photobook 
+KPop Album.cd
 
 # These are examples of Methods in OOP
 KPop Album.identify_variation()
