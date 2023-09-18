@@ -41,3 +41,15 @@ class POB(KPopAlbum):
         print ("A4 Folder: ", self.folder)
     def obtain_random_sticker_set(self):
         print ("Sticker: ", self.sticker)
+
+specialalbum = POB("Charisma Hao (Cat Ver.)", "Insert Winner's Name Here", "Dear Dream A4 Clear Folder", "S-Class Sticker Set", "mixtape", "flat displaying a group yearbook layout", "Shen Quan Rui","Page 27", "Track 3")
+
+print (specialalbum.exclusive_photocard)
+print (specialalbum.folder)
+print (specialalbum.sticker)
+print (specialalbum.version)
+print (specialalbum.poster)
+print (specialalbum.photocard)
+print (specialalbum.photobook)
+print (specialalbum.cd)
+
